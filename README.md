@@ -1,5 +1,6 @@
 # Rasberry-PI led-matrix voice control
 
+The project allows you to control RGB LED displays using Raspberry Pi GPIO with voice control from google speech regognition. The project also allows you to control arduino attached led panels from serial port (rasberry-pi->arduino), but this is not documented well.
 
 ## Running the project
 
