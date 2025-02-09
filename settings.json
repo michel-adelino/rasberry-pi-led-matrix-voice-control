@@ -1,0 +1,50 @@
+{
+    "default" : {
+        "id" : "face"
+        },
+    "reset_matrix" : {
+        "id" : "reset_matrix"
+        },
+    "reboot_rasbi" : {
+        "id" :  "reboot_rasbi"
+        },
+    "shutdown_rasbi" : {
+        "id" :  "shutdown_rasbi"
+        },
+    "update_project" : {
+        "id" :  "update_project"
+        },
+    "media" : {
+    "bsod": ["./led-image-viewer", "images/bsod.png", "--led-rows=32", "--led-cols=64", "--led-chain=2", "--led-gpio-mapping=adafruit-hat-pwm","--led-brightness=30", "--led-slowdown-gpio=3"],
+    "field": ["./led-image-viewer", "images/field.png", "--led-rows=32", "--led-cols=64", "--led-chain=2", "--led-gpio-mapping=adafruit-hat-pwm","--led-brightness=30", "--led-slowdown-gpio=3"],
+    "hunter": ["./video-viewer", "--led-rows=32", "--led-cols=64", "--led-chain=1", "--led-gpio-mapping=adafruit-hat-pwm","--led-brightness=30", "images/hxh.webm"]
+    },
+    "media-stripes" : {
+    "bsod": "4",
+    "field": "5",
+    "hunter": "8"
+    },
+    "mappings" : [
+    { "id" : "bsod",
+        "word_pairs" : [["media", "bluescreen"],["media3"],["media", "3"], ["media", "three"]] 
+    },
+    { "id" : "field",
+        "word_pairs" : [["media", "field"],["media4"],["media", "4"], ["media", "four"]] 
+    },
+    { "id" : "hunter",
+        "word_pairs" : [["media", "hunter"],["media7"],["media", "7"], ["media", "seven"]] 
+    },
+    { "id" : "reset_matrix",
+       "word_pairs" : [["reset", "matrix"]] 
+    },
+    { "id" : "reboot_rasbi",
+       "word_pairs" : [["raspberry", "reboot"]] 
+    },
+    { "id" : "shutdown_rasbi",
+       "word_pairs" : [["raspberry", "off"]] 
+    },
+    { "id" : "update_project",
+       "word_pairs" : [["update", "project"]] 
+    }
+    ]
+}
